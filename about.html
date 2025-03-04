@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+
+        body {
+            align-items: center;    
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            background: rgb(30, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            align-items: center;
+        }
+        .image {
+            flex: 1;
+            padding: 10px;
+        }
+        .image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .bio {
+            flex: 2;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Mila Lin Tabach</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <div class="image">
+            <img src="profile.jpg" alt="Profile Picture">
+        </div>
+        <div class="bio">
+            <h2>Mila Lin Tabach</h2>
+            <p>My name is Mila, and I am studying Computer Science and Film at Barnard College, Columbia University. 
+                I was born and raised in São Paulo, Brazil. 
+                I am still trying to define a form for my work. I am passionate about about the intersection of art and technology. </p>
+        </div>
+    </div>
+</body>
+</html>
