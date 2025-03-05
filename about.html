@@ -3,50 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About | Mila Lin Tabach</title>
     <link rel="stylesheet" href="style.css">
-    
-    <style>
-
-        body {
-            align-items: center;    
-            justify-content: center;
-        }
-
-        .container {
-            display: flex;
-            max-width: 1000px;
-            background: rgb(30, 0, 0);
-            padding: 20px;
-            text-align: center;
-            align-items: center;
-        }
-
-        .image {
-            flex: 1;
-            padding: 10px;
-        }
-        .image img {
-            width: 100%;
-        }
-        .bio {
-            flex: 2;
-            padding: 10px;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-
-    </style>
 </head>
+
 <body>
 
     <nav>
-        <a href="index.html" class="logo">Mila Lin Tabach</a>
+        <a href="index.html" class="logo">MILA LIN TABACH</a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -55,18 +19,20 @@
         <div class="burger" onclick="toggleMenu()">☰</div>
     </nav>
 
-    <br>
-
-    <div class="container">
-        <div class="image">
-            <img src="profile.jpg" alt="Profile Picture">
+    <div class="about-container">
+        <div class="about-photo">
+            <img src="profile3.png" alt="Mila Lin Tabach's Profile Picture">
         </div>
-        <div class="bio">
+
+        <div class="about-bio">
             <h2>Mila Lin Tabach</h2>
             <p>My name is Mila, and I am studying Computer Science and Film at Barnard College, Columbia University. 
                 I was born and raised in São Paulo, Brazil. 
-                I am still trying to define a form for my work. I am passionate about about the intersection of art and technology. </p>
+                I am passionate about the intersection of art and technology, as well as pieces that approach multiculturalism and multilinguism.</p>
+            
+            <a href="Mila_cv.pdf" class="resume-btn" target="_blank">View Resume</a>
         </div>
     </div>
+
 </body>
 </html>
