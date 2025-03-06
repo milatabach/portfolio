@@ -72,19 +72,35 @@ nav {
 
 
 /* Full-width single video */
-.single-video {
-    width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
 .single-video iframe {
     width: 100%;
-    height: 100%;
+    height: 500px;
 }
+
+/* Mixed media grid */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Style for videos in the grid */
+.media-grid iframe {
+    width: 100%;
+    height: 200px;
+}
+
+/* Style for images in the grid */
+.media-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
 
 /* Grid layout for other videos */
 .video-grid {
