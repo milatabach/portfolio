@@ -169,3 +169,8 @@ nav {
         margin: 0 0 15px 0;
     }
 }
+
+.img-fluid {
+    height: 100%; /* Forces images to fill their containers */
+    object-fit: cover; /* Ensures images maintain aspect ratio without stretching */
+}

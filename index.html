@@ -10,6 +10,13 @@
 
     <link rel="stylesheet" href="style.css">
     <script defer src="nav.js"></script>
+
+    <style>
+        .img-fluid {
+            height: 100%; /* Ensures images stretch to fill the column height */
+            object-fit: cover; /* Prevents distortion */
+        }
+    </style>
 </head>
 
 <body>
@@ -36,7 +43,7 @@
         </div>
 
         <!-- Grid Layout -->
-        <div class="row mt-4 g-3 mb-4">
+        <div class="row mt-4 g-3 mb-4 d-flex align-items-stretch">
             <!-- First Row (3 Vertical Images) -->
             <div class="col-md-4 col-sm-6">
                 <img src="homepage_photos/vertical.png" class="img-fluid rounded" alt="Vertical Photo 1">
@@ -57,7 +64,14 @@
         </div>
 
         <!-- Mixed Media Grid (Images + Videos) -->
-        <div class="row mt-4 g-3">
+        <div class="row mt-4 g-3 d-flex align-items-stretch">
+            <div class="col-md-6 col-sm-6">
+                <img src="homepage_photos/2.jpg" class="img-fluid rounded mb-3" alt="Photo 2">
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <img src="homepage_photos/3.JPG" class="img-fluid rounded mb-3" alt="Photo 3">
+            </div>
+
             <div class="col-md-4 col-sm-6">
                 <img src="homepage_photos/5.jpg" class="img-fluid rounded mb-3" alt="Photo 5">
             </div>
@@ -71,10 +85,10 @@
             </div>
 
             <div class="col-md-6 col-sm-6">
-                <img src="homepage_photos/2.jpg" class="img-fluid rounded mb-3" alt="Photo 2">
+                <img src="homepage_photos/mei.jpg" class="img-fluid rounded mb-3" alt="Photo 2">
             </div>
             <div class="col-md-6 col-sm-6">
-                <img src="homepage_photos/3.JPG" class="img-fluid rounded mb-3" alt="Photo 3">
+                <img src="homepage_photos/mei_omar.JPG" class="img-fluid rounded mb-3" alt="Photo 3">
             </div>
 
             <div class="col-md-4 col-sm-6">
