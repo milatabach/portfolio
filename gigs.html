@@ -4,37 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mila Lin Tabach</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="nav.js"></script>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .navbar-toggler {
+            border-color: white;
+        }
+        .navbar-toggler-icon {
+            background-color: white;
+        }
+        .image-container {
+            display: flex;
+            align-items: stretch;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
-
 <body>
 
-    <nav>
-        <a href="index.html" class="logo">MILA LIN TABACH</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="burger" onclick="toggleMenu()">☰</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MILA LIN TABACH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
     
-    <section>
+    <br>
+    <p style="text-align: center;">
+        I did some photography gigs at Columbia. Here are some of them :) 
+    </p>
+    <br>
+
+    <section class="container mt-4 mb-5">
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-6 col-sm-12 image-container">
+                <img src="Gigs/v1.jpg" alt="Photo 1">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 image-container">
+                <img src="Gigs/v2.jpg" alt="Photo 2">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 image-container">
+                <img src="Gigs/v3.JPG" alt="Photo 3">
+            </div>
+        </div>
         
-        <!-- Single Full-Width Video -->
-        <div class="single-video">
-            <iframe src="https://www.youtube.com/embed/8JKtavIiRMU" frameborder="0" allowfullscreen></iframe>
+        <div class="row g-3 mt-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 image-container">
+                <img src="Gigs/h1.jpg" alt="Photo 4">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 image-container">
+                <img src="Gigs/h2.jpg" alt="Photo 5">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 image-container">
+                <img src="Gigs/h3.JPG" alt="Photo 6">
+            </div>
         </div>
 
-        <!-- Grid Layout for Other Videos -->
-        <div class="video-grid">
-            <iframe src="https://www.youtube.com/embed/dMYKNk1HY7Y" frameborder="0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/U9X5X2EOGvc" frameborder="0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/AvX17Sg43ig" frameborder="0" allowfullscreen></iframe>
+        <div class="row g-3 mt-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 image-container">
+                <img src="Gigs/h4.jpg" alt="Photo 7">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 image-container">
+                <img src="Gigs/h5.png" alt="Photo 8">
+            </div>
         </div>
         
+        <div class="row g-3 mt-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 image-container">
+                <img src="Gigs/v4.jpg" alt="Photo 9">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 image-container">
+                <img src="Gigs/v5.jpg" alt="Photo 10">
+            </div>
+        </div>
     </section>
 
 </body>
