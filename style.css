@@ -171,3 +171,55 @@ nav {
     height: 100%; /* Forces images to fill their containers */
     object-fit: cover; /* Ensures images maintain aspect ratio without stretching */
 }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+        display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 1000;
+    text-align: center; /* optional: centers the text inside */
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .burger {
+        display: block;
+    }
+}

@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Mila Lin Tabach</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
+</script>
+
+
 </head>
 
 <body>
@@ -13,8 +21,17 @@
         <a href="index.html" class="logo">MILA LIN TABACH</a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Photography ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="performances.html">Performances</a></li>
+                    <li><a href="life.html">Life</a></li>
+                    <li><a href="headshots-events.html">Headshots and Events</a></li>
+                </ul>
+            </li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+
         </ul>
         <div class="burger" onclick="toggleMenu()">☰</div>
     </nav>
@@ -29,7 +46,7 @@
             <p>My name is Mila, and I am studying Computer Science and Film at Barnard College, Columbia University. 
                 I was born and raised in São Paulo, Brazil. 
                 I am passionate about the intersection of art and technology, as well as pieces that approach
-                 multiculturalism and multilingualism. Overall, I am passionated about visual story. </p>
+                 multiculturalism and multilingualism. </p>
             
             <a href="Mila_cv.pdf" class="resume-btn" target="_blank">View Resume</a>
         </div>
