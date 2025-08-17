@@ -1,104 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mila Lin Tabach</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-        }
-        .navbar-brand, .nav-link {
-            color: white !important;
-        }
-        .navbar-toggler {
-            border-color: white;
-        }
-        .navbar-toggler-icon {
-            background-color: white;
-        }
-        .image-container {
-            display: flex;
-            align-items: stretch;
-            overflow: hidden;
-        }
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Life | Mila Lin Tabach</title>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">MILA LIN TABACH</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Custom Styles and Scripts -->
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="nav.js"></script>
+
+  <style>
+    mesg {
+        text-align: justify;
+        border: 4;
+    }
+    .img-fluid {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="logo">MILA LIN TABACH</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Photography ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="life.html">Life</a></li>
+          <li><a href="performances.html">Performances</a></li>
+          <li><a href="headshots-events.html">Headshots and Events</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+    <div class="mesg mt-4 mb-5">
+        <p>
+            Hi everyone!  
+        </p>
+        <p>            Welcome to my photography portfolio. Here you’ll find a selection of my work from various gigs, including headshots, events, and graduation portraits.  
+            Photography is something I truly love, so if you’re interested in working together (and I hope you are ❤️), feel free to reach out to me via text or email.
+        </p>
+        <p>Best, <br>Mila :)</p>
         </div>
-    </nav>
-    
-    <br>
-    <p style="text-align: center;">
-        I did some photography gigs at Columbia. Here are some of them :) 
-    </p>
     <br>
 
     <section class="container mt-4 mb-5">
-        <div class="row g-3">
-            <div class="col-lg-4 col-md-6 col-sm-12 image-container">
-                <img src="gigs/v1.jpg" alt="Photo 1">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 image-container">
-                <img src="gigs/v2.jpg" alt="Photo 2">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 image-container">
-                <img src="gigs/v3.JPG" alt="Photo 3">
-            </div>
-        </div>
-        
-        <div class="row g-3 mt-4">
-            <div class="col-lg-4 col-md-6 col-sm-12 image-container">
-                <img src="gigs/h1.jpg" alt="Photo 4">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 image-container">
-                <img src="gigs/h2.jpg" alt="Photo 5">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 image-container">
-                <img src="gigs/h3.JPG" alt="Photo 6">
-            </div>
-        </div>
+  <div class="row g-3">
 
-        <div class="row g-3 mt-4">
-            <div class="col-lg-6 col-md-6 col-sm-12 image-container">
-                <img src="gigs/h4.jpg" alt="Photo 7">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 image-container">
-                <img src="gigs/h5.png" alt="Photo 8">
-            </div>
-        </div>
-        
-        <div class="row g-3 mt-4">
-            <div class="col-lg-6 col-md-6 col-sm-12 image-container">
-                <img src="gigs/v4.jpg" alt="Photo 9">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 image-container">
-                <img src="gigs/v5.jpg" alt="Photo 10">
-            </div>
-        </div>
-    </section>
+    <!-- Headshots -->
+    <h3 class="mt-4">Headshots</h3>
+    <div class="col-md-6"><img src="gigs/h1.jpg" class="img-fluid rounded" alt="Headshot 1" /></div>
+    <div class="col-md-6"><img src="gigs/h2.jpg" class="img-fluid rounded" alt="Headshot 2" /></div>
+    <div class="col-md-6"><img src="gigs/h3.jpg" class="img-fluid rounded" alt="Headshot 3" /></div>
+    <div class="col-md-6"><img src="gigs/h4.jpg" class="img-fluid rounded" alt="Headshot 4" /></div>
+    <div class="col-md-6"><img src="gigs/h5.png" class="img-fluid rounded" alt="Headshot 5" /></div>
+    <div class="col-md-6"><img src="gigs/IMG_9990.JPG" class="img-fluid rounded" alt="Headshot 6" /></div>
+    <div class="col-md-6"><img src="gigs/v1.jpg" class="img-fluid rounded" alt="Headshot 7" /></div>
+    <div class="col-md-6"><img src="gigs/v2.jpg" class="img-fluid rounded" alt="Headshot 8" /></div>
+
+    <!-- Graduation Photos -->
+    <h3 class="mt-5">Graduation Photos</h3>
+    <div class="col-md-4"><img src="gigs/IMG_9482.JPG" class="img-fluid rounded" alt="Graduation Photo 1" /></div>
+    <div class="col-md-4"><img src="gigs/IMG_9885.JPG" class="img-fluid rounded" alt="Graduation Photo 2" /></div>
+    <div class="col-md-4"><img src="gigs/IMG_9940.JPG" class="img-fluid rounded" alt="Graduation Photo 3" /></div>
+    <div class="col-md-6"><img src="gigs/IMG_0814.JPG" class="img-fluid rounded" alt="Graduation Photo 4" /></div>
+    <div class="col-md-6"><img src="gigs/IMG_0959.JPG" class="img-fluid rounded" alt="Graduation Photo 5" /></div>
+    <div class="col-md-12"><img src="gigs/IMG_1292.JPG" class="img-fluid rounded" alt="Graduation Photo 6" /></div>
+    <div class="col-md-6"><img src="gigs/IMG_2881.JPG" class="img-fluid rounded" alt="Graduation Photo 7" /></div>
+    <div class="col-md-6"><img src="gigs/IMG_3013.JPG" class="img-fluid rounded" alt="Graduation Photo 8" /></div>
+    <div class="col-md-12"><img src="gigs/IMG_3278.JPG" class="img-fluid rounded" alt="Graduation Photo 9" /></div>
+
+    <!-- Other Events -->
+    <h3 class="mt-5">Other Events</h3>
+    <div class="col-md-4"><img src="gigs/IMG_6300.JPG" class="img-fluid rounded" alt="Event Photo 1" /></div>
+    <div class="col-md-4"><img src="gigs/IMG_6321.JPG" class="img-fluid rounded" alt="Event Photo 2" /></div>
+    <div class="col-md-4"><img src="gigs/IMG_6319.JPG" class="img-fluid rounded" alt="Event Photo 3" /></div>
+    <div class="col-md-4"><img src="gigs.html" class="img-fluid rounded" alt="Event Photo 4" /></div>
+    <div class="col-md-4"><img src="gigs/IMG_6596.JPG" class="img-fluid rounded" alt="Event Photo 5" /></div>
+    <div class="col-md-4"><img src="gigs/IMG_6788.JPG" class="img-fluid rounded" alt="Event Photo 6" /></div>
+    <div class="col-md-6"><img src="gigs/v4.JPG" class="img-fluid rounded" alt="Event Photo 7" /></div>
+    <div class="col-md-6"><img src="gigs/v5.JPG" class="img-fluid rounded" alt="Event Photo 8" /></div>
+
+  </div>
+</section>
+
 
 </body>
 </html>
