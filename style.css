@@ -62,12 +62,14 @@ nav {
 @media (max-width: 600px) {
     .nav-links {
         display: none;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
-        background: #333;
+        background: black;
         width: 100%;
         top: 50px;
         left: 0;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav-links.show {
@@ -76,6 +78,10 @@ nav {
 
     .burger {
         display: block;
+    }
+    .nav-links li {
+        display: inline-block;
+        margin: 0 8px;
     }
 }
 
