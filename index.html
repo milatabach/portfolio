@@ -13,9 +13,33 @@
     <script defer src="nav.js"></script>
 
     <style>
+        /* Responsive image: maintain aspect ratio, never stretch */
         .img-fluid {
-            height: 100%;
-            object-fit: cover;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            max-width: 100%;
+            display: block;
+        }
+        @media (max-width: 600px) {
+            .row > [class^="col-"],
+            .row > [class*=" col-"] {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .container, .row, .col-12, .col-md-4, .col-md-6 {
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .ratio {
+                height: auto;
+                min-height: 200px;
+            }
+            .img-fluid.rounded {
+                border-radius: 8px;
+            }
         }
     </style>
 </head>
@@ -26,18 +50,18 @@
     <nav>
         <a href="index.html" class="logo">MILA LIN TABACH</a>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#">Photography ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="performances.html"> Performances</a></li>
-                    <li><a href="life.html">Life</a></li>
-                    <li><a href="headshots-events.html">Headshots and Events</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-
+        <li class="dropdown">
+            <a href="#">Photography ▾</a>
+            <ul class="dropdown-content">
+            <li><a href="life.html">Life</a></li>
+            <li><a href="performances.html">Performances</a></li>
+            <li><a href="headshots-events.html">Headshots and Events</a></li>
+            </ul>
+        </li>
+                <li><a href="video.html">Video / Film</a></li>
+    <li><a href="swe.html">SWE</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="burger" onclick="toggleMenu()">☰</div>
     </nav>
@@ -108,45 +132,24 @@
             </div>
         </div>
 
-        <!-- Mixed Media Grid -->
-        <div class="row mt-4 g-3 d-flex align-items-stretch">
-            <div class="col-md-4">
-                <img src="homepage_photos/mei.jpg" class="img-fluid rounded mb-3" alt="Photo 5">
-            </div>
-            <div class="col-md-4">
-                <div class="ratio ratio-16x9 mb-3">
-                    <iframe src="https://www.youtube.com/embed/dMYKNk1HY7Y" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <img src="Life_photography/pr-10.jpg" class="img-fluid rounded mb-3" alt="Photo 7">
-            </div>
-
-            <div class="col-md-4">
-                <div class="ratio ratio-16x9 mb-3">
-                    <iframe src="https://www.youtube.com/embed/U9X5X2EOGvc" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <img src="Life_photography/pr-18.jpg" class="img-fluid rounded mb-3" alt="Photo 6">
-            </div>
-            <div class="col-md-4">
-                <div class="ratio ratio-16x9 mb-3">
-                    <iframe src="https://www.youtube.com/embed/AvX17Sg43ig" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <!-- Demo Image with GitHub Link -->
-            <div class="col-6 mt-4 text-center">
-                <img src="homepage_photos/demo.gif" class="img-fluid rounded mx-auto d-block" alt="Demo GIF">
+        <!-- Demo Images with GitHub Links in the same row -->
+        <div class="row mt-4">
+            <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                <img src="homepage_photos/demo.gif" class="img-fluid rounded mx-auto d-block demo-img-fixed" alt="Demo GIF">
                 <a href="https://github.com/milatabach/coms3930-module1/tree/main" style="color:white;" target="_blank">
                     Cute and silly code for class (Generative art)
                 </a>
             </div>
-            <div class="col-6 mt-4 text-center">
-                <img src="homepage_photos/website_screenshot.png" class="img-fluid rounded mx-auto d-block" alt="Demo GIF">
+            <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                <img src="homepage_photos/laugh.png" class="img-fluid rounded mx-auto d-block demo-img-fixed" alt="Laugh Meter GIF">
+                <a href="https://github.com/milatabach/laugh_metter" style="color:white;" target="_blank">
+                    Laughing Meter: Analis laughter different moments of a video and plots.
+                </a>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <img src="homepage_photos/website_screenshot.png" class="img-fluid rounded mx-auto d-block demo-img-fixed" alt="Website Screenshot">
                 <a href="https://stacy-the-sassy.onrender.com/camera/back" style="color:white;" target="_blank">
-                    Website that teaches the user how to use a camera with a simulator/ quizz. 
+                    Website that teaches the user how to use a camera with a simulator/ quizz.
                 </a>
             </div>
         </div>

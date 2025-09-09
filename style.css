@@ -1,10 +1,17 @@
+/* Make demo images in the row the same size */
+.demo-img-fixed {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1.5/1;
+}
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     color: white;
     background-color: black;
     align-items: center;
-}
+
 
 .logo {
     color: white;  
@@ -25,7 +32,8 @@ nav {
     align-items: center;
     background: black;
     color: white;
-    padding: 10px 20px;
+    padding: 4px 10px;
+    min-height: 36px;
 }
 
 .nav-links {
@@ -42,6 +50,7 @@ nav {
     text-decoration: none;
     color: white;
     padding: 10px;
+    font-size: 14px;
 }
 
 .burger {
@@ -167,9 +176,14 @@ nav {
     }
 }
 
+
+/* Responsive image: maintain aspect ratio, never stretch */
 .img-fluid {
-    height: 100%; /* Forces images to fill their containers */
-    object-fit: cover; /* Ensures images maintain aspect ratio without stretching */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+    display: block;
 }
 
 .nav-links {
@@ -183,7 +197,7 @@ nav {
 }
 
 .dropdown-content {
-        display: none;
+    display: none;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -193,6 +207,8 @@ nav {
     min-width: 200px;
     z-index: 1000;
     text-align: center; /* optional: centers the text inside */
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 .dropdown-content li a {
@@ -211,15 +227,42 @@ nav {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .nav-links {
+
+@media (max-width: 600px) {
+    .about-container {
         flex-direction: column;
-        display: none;
+        text-align: center;
+        padding: 20px;
     }
-    .nav-links.active {
-        display: flex;
+
+    .about-photo img {
+        margin: 0 0 15px 0;
     }
-    .burger {
-        display: block;
+
+    /* Stack grid columns vertically */
+    .row > [class^="col-"],
+    .row > [class*=" col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
+
+    /* Remove extra margin/padding for mobile */
+    .container, .row, .col-12, .col-md-4, .col-md-6 {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Responsive video ratio for mobile */
+    .ratio {
+        height: auto;
+        min-height: 200px;
+    }
+
+    /* Reduce image border radius for mobile */
+    .img-fluid.rounded {
+        border-radius: 8px;
+    }
+}
 }
