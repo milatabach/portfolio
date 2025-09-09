@@ -148,19 +148,22 @@ nav {
     max-width: 350px;
 }
 
+
 .resume-btn {
     display: inline-block;
     padding: 8px 15px;
-    background-color: white;
-    color: rgb(48, 48, 48);
+    background-color: #222;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+    border: none;
+    transition: background 0.2s, color 0.2s;
 }
 
 .resume-btn:hover {
-    background-color: gray;
-    color: white;
+    background-color: #444;
+    color: #fff;
 }
 
 /* Responsive for smaller screens */
