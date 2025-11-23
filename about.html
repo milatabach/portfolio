@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Mila Lin Tabach</title>
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <script>
     function toggleMenu() {
@@ -12,6 +15,47 @@
     }
 </script>
 
+    <style>
+        .contact-section {
+            max-width: 600px;
+            margin: 60px auto 40px;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-section h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .contact-section p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .contact-section a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Media Icons */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 24px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #bbb;
+        }
+    </style>
 
 </head>
 
@@ -31,7 +75,6 @@
 			<li><a href="video.html">Film</a></li>
         <li><a href="swe.html">SWE</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
 
         </ul>
         <div class="burger" onclick="toggleMenu()">☰</div>
@@ -51,6 +94,25 @@
             
             <a href="Mila_cv.pdf" class="resume-btn" target="_blank">View Resume</a>
             <a href="transcript.pdf" class="resume-btn" target="_blank">View transcript</a>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Personal email: <a href="mailto:milatabach@gmail.com">milatabach@gmail.com</a></p>
+        <p>School email: <a href="mailto:ml4851@columbia.edu">ml4851@columbia.edu</a></p>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/mila-lin-tabach-802157222/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/milatabach/" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/milatabach" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
     </div>
 
