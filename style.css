@@ -1,6 +1,6 @@
 /* Base Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Menlo, Consolas, "SFMono-Regular", monospace;
     text-align: center;
     color: white;
     background-color: black;
@@ -81,6 +81,45 @@ nav {
 .burger {
     display: none;
     cursor: pointer;
+}
+
+/* Homepage CTA Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 36px auto 12px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 240px;
+    padding: 20px 30px;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    background: #0b0b0b;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.cta-button:hover {
+    background: #111;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+    color: #eaeaea;
+}
+
+.cta-button:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.06);
 }
 
 /* Typography */
