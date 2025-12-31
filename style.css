@@ -283,8 +283,8 @@ h2 {
     background: #000000;
     border-radius: 20px;
     padding: 30px;
-    max-width: 1000px;
-    margin: 50px auto;
+    max-width: 1200px;
+    margin: 30px auto;
 }
 
 .about-photo img {
@@ -292,14 +292,28 @@ h2 {
     height: 340px;
     border-radius: 12px;
     object-fit: cover;
-    margin-right: 20px;
+    margin-right: 30px;
     padding: 0;
     filter: grayscale(100%);
 }
 
 .about-bio {
     text-align: left;
-    max-width: 350px;
+    max-width: 600px;
+}
+
+.about-bio p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-bio a {
+    color: white;
+    text-decoration: underline;
+}
+
+.about-bio a:hover {
+    color: #ccc;
 }
 
 .resume-btn {
